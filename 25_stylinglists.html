@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LIST</title>
+    <style>
+        html {
+            font-size: medium;
+            padding: 0px;
+            margin: 0px;
+        }
+        nav {
+            background-color: blue;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;/*bullet point hataunu ko lagi */
+            display: flex;/*list lai horizontal ma rakhne */
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            gap: 30px;
+        }
+        nav ul li {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            text-transform: capitalize; /* text lai capitalize garne */
+            cursor: pointer; /* mouse pointer hand ma change garne */
+            transition: color 0.3s ease; /* smoothly color change garne */
+        }
+        nav ul li:hover {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </nav>
+</body>
+</html>
