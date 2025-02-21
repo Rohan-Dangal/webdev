@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+           
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #d4dae4;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .tags {
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .tag {
+            background: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #587ef4;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: #727ea3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <img src="exercise image.jpg" alt="Nature and Lake">
+        <div class="tags">
+            <span class="tag">Nature</span>
+            <span class="tag">Lake</span>
+        </div>
+        <h2>Peaceful Lake View</h2>
+        <p>Relax by the calm waters, surrounded by lush greenery and breathtaking mountain views. A perfect escape into nature.</p>
+        <a href="#" class="btn">Read More</a>
+    </div>
+
+</body>
+</html>
