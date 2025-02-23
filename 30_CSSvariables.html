@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <style>
+        :root{
+             --color: gold; /* this is the concept of variables in css ekchoti variable declare garepaxi now i can just use this variable in any css property.(used in nav) */
+            --seccolor: green;
+            --defpadding: 30px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+              display: flex;  /* row ma bascha text haru */
+        }
+        ul li{
+            list-style-type: none;/* removes bullet points or numberings */
+            padding: var(--defpadding); 
+        }
+        ul li:first-child{
+            background-color: green; /* direct color applied since local variable won't affect .nav (concept of local variable*/
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        .box{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact me</li>
+        </ul>
+    </div>
+    <div class="box">
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, quisquam alias.
+        </p>
+    </div>
+</body>
+</html>
