@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION in CSS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: brown;
+            width: 70vw;
+            height: 70vh;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: aqua;
+            animation-name: rohankoanimation;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0.36, 0.32, 0.58, 1);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+             animation-play-state: paused; /*janira pause garyo tei rokinchha */
+              
+              /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: rohankoanimation 3s cubic-bezier(0.36, 0.32, 0.58, 1) 1s infinite alternative-reverse, secondanimation 3s cubic-bezier(0.36, 0.32, 0.58, 1) 1s 3 reverse; /*fill-mode;  to use multiple animation*/ 
+        }
+        @keyframes rohankoanimation
+        {
+            from{
+
+            }
+            to{
+                transform: translatex(10vw) translatey(10vh);
+            }
+        }
+        @keyframes secondanimation{
+            0%{
+                transform: rotate(40deg);
+            }
+            30%{
+                transform: rotate(50deg);
+            }
+            80%{
+                transform: rotate(70deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
