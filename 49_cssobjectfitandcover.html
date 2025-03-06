@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object fit and position</title>
+    <style>
+        .container{
+            height: 445px;
+            width: 445px;
+            border: 2px solid black;
+        }
+        img{
+            width: 445px;
+            height: 445px;
+             object-fit: cover; /*yesle chei afno img ma vako width height lai cover garcha */
+             /* object-fit: contain; yeso garda chei img ta full dekincha tara width height manage hudaina */
+              object-position: top left; /*yesle chei kata pati ko postion lai cover garne vanera */
+              
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+            <img src="https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg" alt="">
+        
+    </div>
+</body>
+</html>
