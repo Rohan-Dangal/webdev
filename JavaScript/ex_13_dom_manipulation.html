@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise</title>
+    <style>
+      
+        .card{
+            display: flex;
+            border: 2px solid black;
+            width: 80vw;
+            background-color: #525151;
+
+            gap: 15px;
+            padding: 10px; 
+            box-sizing: border-box;
+        }
+        .image{
+            position: relative;
+            width: 220px;  
+            height: 220px;
+        }
+        .image img{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 15px;
+            display: block; 
+        }
+        .text{
+            color: white;
+            padding: 2px;
+            
+            padding-top: 10px; 
+        }
+        .text h1 {
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.2em;
+        }
+        .text p {
+            margin-bottom: 0; 
+            font-size: 0.9em; 
+            opacity: 0.8; 
+        }
+        .capsule{
+            position: absolute;
+            bottom: 14px; 
+            right: 14px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 2px 5px;
+            border-radius: 5px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="image">
+                <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/videoseries/ultimate-js-tutorial-hindi-1/JS-Thumb.jpg" alt="">
+                <div class="capsule">
+                    31:06
+                </div>
+            </div>
+            <div class="text">
+                <h1>Introduction to Backend | Sigma Web Dev video #2</h1>
+                <p>
+                    CodeWithHarry . 727K views . 2 months ago
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="ex_13_dom_manipulation.js"></script>
+</body>
+</html>
