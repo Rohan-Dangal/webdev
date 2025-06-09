@@ -6,7 +6,7 @@ function loadscript(src){
         script.src = src;
         script.onload = () =>
         {
-            resolve("file loaded successfullty");
+            resolve("file loaded successfully");
         };
         script.onerror = () => {
             reject("file did not load");
