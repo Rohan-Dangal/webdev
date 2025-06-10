@@ -33,5 +33,4 @@ async function hackingsimulator(){
 }
 hackingsimulator();
 
-
 // question: create a hecking simulator which has green background and it shows these messages with random delay of 1 to 7 sec.  (initializing hacking..., reading your file...,password file detected..., sending all passwords and personal foles to the server...)  the three dots must blink so that that the terminal looks like a real terminal.
