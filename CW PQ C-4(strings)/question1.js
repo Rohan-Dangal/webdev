@@ -1,3 +1,4 @@
+
 let numbersArray = [];
 
 function updateArrayDisplay() {
