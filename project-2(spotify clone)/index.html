@@ -1,25 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>spotify</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="utility.css">
-</head>
-<body>
-  <div class="container flex">
-    <div class="left border">
-       <div class="home">
-      <ul>
-        <li><img src="home.svg" alt="home">home</li>
-        <li><img src="search.svg" alt="search">search</li>
-      </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey m-1 rounded p-1">
+          <ul>
+            <li><img class="invert" src="home.svg" alt="home" />home</li>
+            <li><img class="invert" src="search.svg" alt="search" />search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey m-1 rounded p-1">
+          <h2>Your Library</h2>
+          <div class="songlist">
+            <ul>
+              
+            </ul>
+          </div>
+          <div class="footer">
+            <div>
+              <a href="#"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="#"><span>Safety & Privacy</span></a>
+            </div>
+            <div>
+              <a href="#"><span>Privacy Policy</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right bg-grey rounded p-1">
+        <div class="header">
+          <div class="nav">
+            <div class="button">
+              <button class="loginbutton">Log in</button>
+              <button class="signupbutton">Sign up</button>
+            </div>
+          </div>
+        </div>
+        <div class="spotifyplaylist">
+          <h1>spotify playlists</h1>
+          <div class="cardcontainer">
+            <div class="card">
+              <div class="play">
+                
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e02e1ac918cf9495f4792a87ff8"
+                alt="John C Rai"
+              />
+              <h2>Parkhi Rahechu</h2>
+              <p>John Rai</p>
+            </div>
+          </div>
+          <div class="playbar">
+            <div class="songinfo">
+
+            </div>
+            <div class="songbuttons">
+              <img src="previous.svg" alt="" class="src">
+              <img src="play.svg" alt="" class="src">
+              <img src="next.svg" alt="" class="src">
+            </div>
+            <div class="songtime">
+
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-   
-    <div class="right border"></div>
-  </div>
-  
-</body>
+  <script src="script.js"></script>
+  </body>
 </html>

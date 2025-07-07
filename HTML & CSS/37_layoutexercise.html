@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header {
+    position: sticky;
+    top: 0;
+    background-color: aqua; 
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 20px;
+    gap: 100px;
+}
+
+.container{
+background-color: gray;
+height: 80vh;
+padding: 5px;
+margin: 5px 10px;
+width: auto;
+display: flex;
+}
+.another1{
+    background-color: pink;
+    height: 80vh;
+    text-align: center;
+width: 50%;
+margin: 0px 50px;
+}
+.another2{
+    background-color: greenyellow;
+    height: 80vh;
+    text-align: center;
+    width: 50%;
+    display: flex;
+    margin: 0px 50px;
+    padding: 0px;
+}
+.txtpart{
+    background-color: aliceblue;
+    text-align: center;
+    border: 2px solid gray;
+    padding: 5px;
+    margin: 10 34vw;
+    font-size: 2em;
+    border-radius: 13px;
+}
+.orange{
+    background-color: orange;
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    border-radius: 60px;
+    
+}
+body{
+    height: 200vh;
+}
+    </style>
+</head>
+<body>
+    <header>
+       <ul>
+        <li>home</li>
+        <li>Contact</li>
+        <li>About</li>
+       </ul>
+    </header>
+    <main>
+<div class="container">
+    <div class="another1"></div>
+    <div class="another2"></div>
+    </div>
+</div>
+    </main>
+    <footer>
+<div class="txtpart">
+    welcome to sigma web development express.
+</div>
+<div class="orange"></div>
+        
+    </footer>
+</body>
+</html>

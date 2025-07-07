@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postion property</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 300vh;
+}
+.box{
+    width: 100vw;
+    height: 20vh;
+    border: 2px solid black;
+}
+.box1{
+    background-color: red;
+    position: sticky; /*sticky use garda chei scroll garepaxi pani element top ma chupki bascha*/
+    /*tranform,filter or perspective also work as relative(i.e. it behave like its parent*/
+    /*  tag filter: invert(0); */
+    top:0;
+    height: 20vh;
+    width: 80vw;
+    margin: 0;
+    padding: 0;
+
+}
+.box2{
+    background-color: green;
+    position: relative; /*relative use garepaxi variable ko static postion hatcha ra jatai rakhda ni huncha*/
+    left: 30px;
+    bottom:  30px;
+    
+
+}
+.box3{
+    background-color: blue;
+     position: absolute;  /*position absolute use garda chei afno parent class lai hercha yo element le ani yedi cha vena teslai inherit garcha natra closest to its nearest element yedi parent class ma relation absoulte thiyena vane it would not be under parent class.  */
+    right: 6px;
+}
+.box4{
+    background-color: yellow;
+    position: fix; /* fixed use garda chei element ko postion fix huncha website jati scroll garepani(specially used when we advertisement in the website)*/
+}
+.parent{
+    position: absolute;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid purple;
+}
+
+    </style>
+</head>
+<div class="parent">
+    <div class="box box1"></div>
+<div class="box box2"></div>
+<div class="box box3"></div>
+<div class="box box4"></div>
+</div>
+
+</html>

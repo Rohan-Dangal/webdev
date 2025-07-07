@@ -1,15 +1,55 @@
-.border{
-    border: 2px solid black;
-    margin: 3px;
+.border {
+  border: 2px solid black;
+  margin: 3px;
 }
-.flex{
-    display: flex;
+
+.flex {
+  display: flex;
 }
-.justify-center
-{
-    justify-content: center;
+
+.justify-center {
+  justify-content: center;
 }
-.align-center
-{
-    align-items: center;
+
+.align-center {
+  align-items: center;
+}
+
+.rounded {
+  border-radius: 6px;
+}
+
+.m-1 {
+  margin: 5px;
+}
+
+.p-1 {
+  padding: 10px;
+}
+/* ===== Modern Light Gray Scrollbar ===== */
+/* For Chrome/Safari/Edge */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #282828; /* Slightly lighter than Spotify's dark bg */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4d4d4d; /* Medium gray */
+  border-radius: 5px;
+  border: 2px solid #282828; /* Creates inset effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5e5e5e; /* Lighter gray on hover */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #4d4d4d #282828;
 }

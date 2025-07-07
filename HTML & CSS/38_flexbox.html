@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex Box</title>
+    <style>
+.container{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center; /* aligns items horizontally (it mainly work under main axis and cross axis if the flex direction is row but if its column our main axis will  be column*/
+    align-items: center; /* aligns items vertically */
+    height: 80vh;
+    background-color: gray;
+    /* flex-direction: column; aligns items vertically */39_
+    flex: wrap; /* it will wrap the items if they are not fitting in the container */
+     align-content: center; /*(align-content:flex-start/end)yedi element haru 2 or 2 vanda badi row ma cha vaney ekai choti savai content lai center ma rakhney concept ho */
+}
+.boxes{
+    background-color: chartreuse;
+    width: 10%;
+    height: 32px;
+    margin: 8px;
+    padding: 5px;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </div>
+    </main>
+</body>
+</html>

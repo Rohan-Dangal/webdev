@@ -1,20 +1,170 @@
-*
-{
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
   margin: 0;
   padding: 0;
-  
+  box-sizing: border-box;
 }
-.left
-{
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container.flex {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
   width: 25vw;
+  padding: 16px;
 }
-.right
-{
+
+.right {
   width: 75vw;
+  max-height: 100vh;
+  overflow: scroll;
+  position: relative;
 }
+
+/* Only added these new rules - nothing else modified */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.button {
+  display: flex;
+  gap: 15px;
+}
+
+.button button {
+  padding: 8px 32px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button button:first-child {
+  background: transparent;
+  color: white;
+  border: 1px solid #727272;
+  font-weight: bold;
+}
+
+.button button:last-child {
+  background: white;
+  color: black;
+  border: none;
+}
+
+/* Your existing rules below (unchanged) */
 .home ul li {
-    list-style: none;
-    width: 25px;
-    display: flex;
-    gap: 15px;
+  list-style: none;
+  width: 25px;
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.bg-grey {
+  background-color: #121212;
+}
+
+.footer {
+  display: flex;
+  font-size: 10px;
+  gap: 13px;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+}
+
+.footer a {
+  color: grey;
+}
+.right {
+  margin: 16px 0;
+}
+
+.library {
+  min-height: 80vh;
+  position: relative;
+}
+.header {
+  background-color: #201f1f;
+}
+.spotifyplaylist {
+  padding: 10px;
+}
+.spotifyplaylist .card {
+  width: 210px;
+  background-color: #1c1c1c;
+  border-radius: 9px;
+  padding: 10px;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+.card > * {
+  padding-top: 12px;
+}
+.cardcontainer {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 18px;
+  overflow-y: scroll;
+  max-height: 80vh;
+}
+.play {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%231DB954'/%3E%3Cpath d='M32 24L20 16V32L32 24Z' fill='white'/%3E%3C/svg%3E");
+  background-size: contain;
+  cursor: pointer;
+  position: absolute;
+  right: 13px;
+  top: 158px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.card:hover .play {
+  opacity: 1;
+}
+.loginbutton {
+  background-color: rgb(228, 203, 203);
+  color: white;
+  font-weight: bold;
+}
+.playbar {
+  position: absolute;
+  bottom: 0;
+  background-color: rgb(172, 187, 172);
+  width: 100%;
+  padding: 9px;
+}
+.songbuttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.songlist ul {
+  padding: 12px 39px;
+  list-style-type: decimal;
 }
